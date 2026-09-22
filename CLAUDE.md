@@ -32,10 +32,11 @@ Static personal site for Ikenna Udeani. Plain HTML, CSS and JavaScript in `site/
 - Every figure on the page carries its source. Do not add a number without a provenance tag or a clear source, and add it to the sources table in `README.md`.
 - Illustrative visuals (Provenance chart, U.S. risk graph, ledger rows) must stay labelled as illustrative.
 - Keep the phone number off the public site.
+- The public CV is site/cv/Ikenna_Udeani_CV.pdf and must never contain a phone number. To update it, replace the file and keep the same name.
 - If the domain changes, update it in the `<head>` of `index.html`, `sitemap.xml`, `robots.txt` and the line at the top of this file.
 
 ## Before opening a PR
 
 1. `cd site && python3 -m http.server 8000`, then check desktop and a 390px-wide mobile view, in light and dark.
 2. `grep -rn "$(printf '\xe2\x80\x94')" site` (searches for em dashes) must return nothing.
-3. No console errors. The 404 for `cv/Ikenna_Udeani_CV.pdf` is expected until that file exists.
+3. No console errors.
