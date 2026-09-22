@@ -15,7 +15,7 @@ portfolio/
     ├── og.png            1200×630 preview image for LinkedIn, Slack, X, etc.
     ├── robots.txt
     ├── sitemap.xml
-    ├── cv/               drop your CV here (see below)
+    ├── cv/               public CV (see below)
     └── assets/
         ├── site.css
         ├── site.js       hero simulation, command menu, charts, theme toggle
@@ -82,7 +82,7 @@ Every placeholder is marked with an `EDIT:` comment in `site/index.html`. Search
 
 | What | Where | How |
 |---|---|---|
-| **CV download** | `site/cv/` | Save your CV as `Ikenna_Udeani_CV.pdf`. Until the file exists, the button quietly links to LinkedIn. |
+| **CV download** | `site/cv/` | The public CV is in place as `Ikenna_Udeani_CV.pdf` and opens in a new tab. To update it, replace the file and keep the same name. It must never contain a phone number. |
 | **Writing** | `#writing` section | Each `<li class="post post--placeholder">` is a placeholder. Change the title, turn the `<span class="post__title">` into `<a class="post__title" href="…">`, set the venue/date, remove `post--placeholder`. |
 | **Tech company** | `#venture` section | Replace the three redacted bars with the name, one-liner and launch date; add a link; update the form text. |
 | **Projects** | `#work` section | Each project is one `<article class="case">`. Copy one to add another. |
