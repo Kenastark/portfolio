@@ -94,7 +94,7 @@ The site promises "every figure carries its source", so keep these honest when y
 
 | Figure | Source |
 |---|---|
-| 8+ years | Your CV and LinkedIn profile |
+| 5+ years | Your CV (site/cv/Ikenna_Udeani_CV.pdf) and LinkedIn profile |
 | 4 national programmes (TB, HIV, HPV, EID) | CHAI Nigeria, National LIMS, 2023 to 2024 |
 | −90% manual reconciliation | CHAI CBHMIS anomaly-detection QA, 2025 |
 | 29% flagged / 100.00% completeness / 149,683 readings / 16 stations | Provenance phase-1 audit report (`docs/phase-reports/phase-1-audit.md`), Aug 2026 |
