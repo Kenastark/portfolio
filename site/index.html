@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ikenna Udeani</title>
+<meta name="description" content="Ikenna Udeani is a data scientist and engineer who builds systems that tell true data from broken data: national health information systems, machine learning, and graph neural networks for public health and the environment. Based in Toulouse, France.">
+<meta name="author" content="Ikenna Udeani">
+<!-- EDIT: replace https://ikennaudeani.netlify.app with your final domain (5 places in this head + sitemap.xml + robots.txt) -->
+<link rel="canonical" href="https://ikennaudeani.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ikenna Udeani · Data scientist & engineer">
+<meta property="og:description" content="I build the systems that tell true data from broken data, from national laboratory networks to city sensor networks.">
+<meta property="og:url" content="https://ikennaudeani.netlify.app/">
+<meta property="og:image" content="https://ikennaudeani.netlify.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ikennaudeani.netlify.app/og.png">
+<meta name="theme-color" content="#E9EDF1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#090D12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-var.woff2" as="font" type="font/woff2" crossorigin>
+<script src="assets/theme.js"></script>
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ikenna Udeani",
+  "jobTitle": "Data Scientist and Data Engineer",
+  "email": "mailto:ikennaudeani@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Toulouse", "addressCountry": "FR" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Debrecen" },
+    { "@type": "CollegeOrUniversity", "name": "University of Port Harcourt" }
+  ],
+  "knowsAbout": ["Data science", "Data engineering", "Graph neural networks", "Health informatics", "DHIS2", "Laboratory information systems", "Anomaly detection"],
+  "sameAs": ["https://www.linkedin.com/in/ikenna-udeani/", "https://github.com/Kenastark", "https://medium.com/@ikennaudeani"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top" aria-label="Ikenna Udeani, back to top">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" class="brand__bg"/><path d="M9 22 L16 10 L23 20" class="brand__edge"/><circle cx="9" cy="22" r="3" class="brand__node"/><circle cx="16" cy="10" r="3" class="brand__node"/><circle cx="23" cy="20" r="3.4" class="brand__ok"/></svg>
+      <span class="brand__name">Ikenna Udeani</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#log">Experience</a>
+      <a href="#writing">Writing</a>
+      <a href="#venture">Venture</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__tools">
+      <span class="clock mono" title="Local time in Toulouse"><span id="clock">--:--</span> Toulouse</span>
+      <button class="kbd-btn" id="openPalette" type="button" aria-haspopup="dialog" aria-label="Open command menu">
+        <span class="kbd-btn__keys" aria-hidden="true"><kbd id="modKey">⌘</kbd><kbd>K</kbd></span>
+        <span class="kbd-btn__label">Menu</span>
+      </button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================================================ HERO -->
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero__copy">
+      <p class="status mono"><span class="dot dot--ok" aria-hidden="true"></span>Available for data science &amp; engineering roles · France &amp; remote</p>
+      <h1 id="hero-title" class="hero__title">Is this number <span class="reading" id="reading" data-state="pending" aria-hidden="true"><span class="reading__val">182</span><span class="reading__unit">µg/m³</span></span> telling the truth?</h1>
+      <p class="hero__lede">A reading of 180&nbsp;µg/m³ could be a real pollution event, or a sensor baking in the sun with a clogged inlet. On a screen, both look identical.</p>
+      <p class="hero__lede">I’m <strong>Ikenna Udeani</strong>, a data scientist and engineer. I build the systems that tell them apart, from national laboratory networks in Nigeria to city sensor networks in Hungary.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#work">See the work <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg></a>
+        <!-- EDIT: drop your current CV into site/cv/ with this exact file name. Until then the button links to LinkedIn. -->
+        <a class="btn btn--ghost" id="cvLink" href="cv/Ikenna_Udeani_CV.pdf">Download CV</a>
+      </div>
+      <p class="hint mono">Press <kbd class="modkey">⌘</kbd><kbd>K</kbd> to jump anywhere</p>
+    </div>
+
+    <figure class="instrument" aria-labelledby="inst-cap">
+      <div class="instrument__bar mono">
+        <span class="live"><span class="dot dot--live" aria-hidden="true"></span>Live · plume or fault?</span>
+        <span class="wind"><svg class="wind__arrow" id="windArrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h12M11 6l4 4-4 4"/></svg><span id="windText">Wind 250° · 4.1 m/s</span></span>
+      </div>
+      <div class="instrument__stage" id="stage">
+        <canvas id="net" role="img" aria-label="Simulated sensor network. When a station spikes, the network checks whether its downwind neighbours corroborate the reading."></canvas>
+        <span class="corner corner--tl" aria-hidden="true"></span><span class="corner corner--tr" aria-hidden="true"></span><span class="corner corner--bl" aria-hidden="true"></span><span class="corner corner--br" aria-hidden="true"></span>
+        <div class="net-tip mono" id="netTip" hidden></div>
+      </div>
+      <div class="instrument__foot">
+        <p class="sr-only" id="simStatus" aria-live="polite"></p>
+        <ol class="log mono" id="log" aria-label="Adjudication log">
+          <li class="log__row" data-v="ok"><span>09:41:07</span><span>S-11</span><span>176 µg/m³</span><span class="log__verdict">R22 plume corroborated · 3/3</span></li>
+          <li class="log__row" data-v="bad"><span>09:40:52</span><span>S-04</span><span>203 µg/m³</span><span class="log__verdict">R17 spatially inconsistent · 0/2</span></li>
+        </ol>
+        <div class="instrument__controls">
+          <button class="chip-btn" id="inject" type="button">Inject a spike</button>
+          <button class="chip-btn" id="pause" type="button" aria-pressed="false">Pause</button>
+          <span class="tally mono" id="tally">1 plume · 1 fault</span>
+        </div>
+      </div>
+      <figcaption id="inst-cap">A toy version of the wind-conditioned adjudicator inside <a href="#provenance">Provenance</a>. Tap any station to inject a spike. If downwind neighbours corroborate it, it’s a plume. If they don’t, it’s a broken sensor.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============================================================ RECORD -->
+  <section class="record" aria-labelledby="record-title">
+    <div class="wrap">
+      <div class="record__head">
+        <h2 id="record-title" class="eyebrow mono">The record</h2>
+        <p class="record__note">Every figure on this page carries its source.</p>
+      </div>
+      <dl class="record__grid">
+        <div class="stat">
+          <dt class="stat__label">years turning fragmented, multi-source data into decisions</dt>
+          <dd class="stat__num">8+</dd>
+          <dd class="prov mono"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>src · career record: energy, health, research</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">national diagnostic programmes moved onto one source of truth: TB, HIV, HPV, EID</dt>
+          <dd class="stat__num">4</dd>
+          <dd class="prov mono"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>src · CHAI Nigeria, National LIMS · 2024</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">less manual data reconciliation after anomaly-detection QA</dt>
+          <dd class="stat__num">−90%</dd>
+          <dd class="prov mono"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>src · CHAI, CBHMIS pipeline · 2025</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">of a city sensor network’s data cells flagged defective, while it reported 100% completeness</dt>
+          <dd class="stat__num">29%</dd>
+          <dd class="prov mono"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>src · Provenance phase-1 audit, Debrecen · 2026</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============================================================ WORK -->
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <header class="section__head">
+        <a class="anchor mono" href="#work">#work</a>
+        <h2 id="work-title" class="section__title" tabindex="-1">Selected work</h2>
+        <p class="section__lede">Four systems with one through-line: making data trustworthy enough for people to act on.</p>
+      </header>
+
+      <div class="work">
+
+        <!-- Provenance -->
+        <article class="case case--wide" id="provenance">
+          <div class="case__visual pv">
+            <div class="pv__legend mono" aria-hidden="true">
+              <span><i class="sw sw--pm10"></i>PM10</span>
+              <span><i class="sw sw--pm25"></i>PM2.5</span>
+              <span class="pv__unit">µg/m³ · 30 days</span>
+            </div>
+            <div class="pv__chart" id="pvChart">
+              <svg viewBox="0 0 600 260" preserveAspectRatio="none" role="img" aria-label="Illustrative 30-day series for two particulate sensors. A plume where both rise together is corroborated. A stretch where PM2.5 exceeds PM10, which is physically impossible, is flagged."></svg>
+            </div>
+            <div class="pv__foot">
+              <div><span class="pv__k mono">Conventional completeness</span><span class="pv__v">100.00%</span></div>
+              <div><span class="pv__k mono">Flagged by the audit</span><span class="pv__v pv__v--bad">29.12%</span></div>
+            </div>
+            <p class="visual-note mono">Illustrative series. Figures from the phase-1 audit of Debrecen’s Green Sentinel network.</p>
+          </div>
+          <div class="case__body">
+            <div class="case__meta mono"><span class="pill pill--live"><span class="dot dot--ok" aria-hidden="true"></span>Live</span><span>DEIK.AI Challenge 2026 · Track 2B</span></div>
+            <h3 class="case__title">Provenance</h3>
+            <p class="case__kicker">An AI trust layer for environmental sensor networks.</p>
+            <p>By every conventional measure, Debrecen’s Green Sentinel network looked healthy. Provenance audited 149,683 readings from 16 stations and found a large share quietly wrong. Then it asks the harder question: did a pollution event travel the way real pollutant transport would? A wind-conditioned graph over the stations separates a plume from a broken sensor, and every call ships with reason codes, SHAP attributions and a calibrated confidence interval. Nothing reaches the public without a human sign-off.</p>
+            <ul class="facts">
+              <li><span class="facts__k mono">Audit</span><span>16 statistical detectors, deterministic and test-gated (117 tests, 96% coverage at phase 1)</span></li>
+              <li><span class="facts__k mono">Model</span><span>HST-GAT, a heterogeneous spatio-temporal graph attention network with 3,299 parameters, plus split-conformal intervals</span></li>
+              <li><span class="facts__k mono">Stack</span><span>Python, FastAPI, PostGIS, LightGBM, PyTorch Geometric, React + TypeScript, MapLibre</span></li>
+            </ul>
+            <div class="case__links">
+              <a class="link" href="https://www.provenancel2.com" target="_blank" rel="noopener">Visit provenancel2.com <span aria-hidden="true">↗</span></a>
+              <a class="link" href="https://github.com/Kenastark/Provenance" target="_blank" rel="noopener">Source on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Maternal & newborn -->
+        <article class="case" id="mnh">
+          <div class="case__visual">
+            <ol class="flow" aria-label="Pipeline from community records to decisions">
+              <li class="flow__step"><span class="flow__k mono">in</span><span>Community health records, multi-state</span></li>
+              <li class="flow__step"><span class="flow__k mono">qa</span><span>Anomaly-detection checks <em class="flow__em">−90% manual reconciliation</em></span></li>
+              <li class="flow__step flow__step--key"><span class="flow__k mono">ml</span><span>Maternal &amp; neonatal mortality risk models</span></li>
+              <li class="flow__step"><span class="flow__k mono">bi</span><span>Early-warning dashboards in Power BI</span></li>
+              <li class="flow__step"><span class="flow__k mono">out</span><span>State teams, CHAI leadership, Gates Foundation donors</span></li>
+            </ol>
+          </div>
+          <div class="case__body">
+            <div class="case__meta mono"><span class="pill">Deployed</span><span>CHAI · Nigeria · 2024 → 2025</span></div>
+            <h3 class="case__title">Maternal &amp; newborn risk models</h3>
+            <p class="case__kicker">Early warning from community health records.</p>
+            <p>Machine learning models that predict maternal and neonatal mortality risk from longitudinal community health data, so state teams know where to intervene first. I owned the pipeline end to end, from scheduled extraction and QA to scoring and the reporting layer, and worked with Nigeria’s Federal Ministry of Health to activate the DHIS2 Community HMIS module nationwide.</p>
+            <ul class="facts">
+              <li><span class="facts__k mono">Stack</span><span>Python, scikit-learn, SQL, DHIS2, Power BI (DAX)</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- LinkWork -->
+        <article class="case" id="linkwork">
+          <div class="case__visual ledger">
+            <p class="chain mono" aria-label="Trust chain: faculty, company, posting, verified student"><span>Faculty</span><i aria-hidden="true">→</i><span>Company</span><i aria-hidden="true">→</i><span>Posting</span><i aria-hidden="true">→</i><span class="chain__end">Verified student</span></p>
+            <ul class="ledger__rows mono" aria-label="Example match ledger">
+              <li class="ledger__row ledger__row--new"><span class="id">JOB-0042</span><span class="x" aria-hidden="true">↔</span><span class="id">STU-0007</span><span class="st">hired · posting closed</span></li>
+              <li class="ledger__row"><span class="id">JOB-0039</span><span class="x" aria-hidden="true">↔</span><span class="id">STU-0015</span><span class="st">hired · posting closed</span></li>
+              <li class="ledger__row"><span class="id">JOB-0031</span><span class="x" aria-hidden="true">↔</span><span class="id">STU-0003</span><span class="st">hired · 1 of 2 filled</span></li>
+            </ul>
+            <p class="visual-note mono">Example ledger entries.</p>
+          </div>
+          <div class="case__body">
+            <div class="case__meta mono"><span class="pill">Pilot</span><span>University of Debrecen · 2026</span></div>
+            <h3 class="case__title">LinkWork</h3>
+            <p class="case__kicker">Every posting here is real.</p>
+            <p>A faculty-verified internship and entry-level hiring platform, built against ghost jobs. Companies are approved before they can post, students verify with their university email, and posting means committing to hire. When a hire happens, the job and candidate IDs are matched on a public ledger and the posting comes down: proof the job was real.</p>
+            <ul class="facts">
+              <li><span class="facts__k mono">Stack</span><span>React 18, Vite, Express, SQLite, Claude API for structured interviews</span></li>
+              <li><span class="facts__k mono">i18n</span><span>English, Hungarian and French</span></li>
+            </ul>
+            <div class="case__links">
+              <a class="link" href="https://github.com/Kenastark/LinkWork" target="_blank" rel="noopener">Source on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Thesis -->
+        <article class="case case--wide case--flip" id="thesis">
+          <div class="case__visual gnn-wrap">
+            <div class="gnn" id="gnn" role="img" aria-label="Illustrative graph over U.S. states: nodes are states, edges are adjacency and mobility links, and colour shows predicted outbreak risk spreading from a hotspot."></div>
+            <div class="gnn__legend mono" aria-hidden="true">
+              <span class="ramp"><i></i>low → high predicted risk</span>
+              <span>nodes: U.S. states · edges: adjacency + mobility</span>
+            </div>
+            <p class="visual-note mono">Illustrative risk surface. Hover to watch it propagate.</p>
+          </div>
+          <div class="case__body">
+            <div class="case__meta mono"><span class="pill pill--research">In research</span><span>MSc thesis · University of Debrecen · 2025 → 2027</span></div>
+            <h3 class="case__title">Outbreak GNN</h3>
+            <p class="case__kicker">Spatiotemporal graph neural networks for early outbreak detection and risk prediction.</p>
+            <p>What if disease surveillance could see an outbreak coming the way a weather model sees a front? My thesis builds dynamic proximity graphs over U.S. geographic zones, with edges for mobility and adjacency, and trains graph neural networks to predict node-level infection risk. An anomaly-detection module flags unusual signals, ablations test what weather, mobility and population density really contribute, and a decision-support dashboard puts the result in front of the people who have to act.</p>
+            <ul class="facts">
+              <li><span class="facts__k mono">Methods</span><span>GCN, GAT and temporal GNN variants; Isolation Forest and autoencoder anomaly detection</span></li>
+              <li><span class="facts__k mono">Data</span><span>Google COVID-19 Open Data, United States</span></li>
+              <li><span class="facts__k mono">Grounding</span><span>Annotated bibliography of 23 papers across five research themes</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="bench-wrap">
+        <h3 class="bench__title mono">Also on the bench</h3>
+        <ul class="bench">
+          <li class="bench__item">
+            <span class="bench__year mono">2026</span>
+            <span class="bench__name">Consonance</span>
+            <span class="bench__desc">Blends two songs into one harmonious mashup and scores how compatible they are. Rights-safe by design: licensed catalogue, links used for metadata only.</span>
+            <span class="pill pill--research">Building</span>
+          </li>
+          <li class="bench__item">
+            <span class="bench__year mono">2024</span>
+            <span class="bench__name">National LIMS: HPV module</span>
+            <span class="bench__desc">Requirements, System Requirements Specification and national rollout of the HPV module on Nigeria’s National Laboratory Information Management System.</span>
+            <span class="pill">Nationwide</span>
+          </li>
+          <li class="bench__item">
+            <span class="bench__year mono">2023</span>
+            <span class="bench__name">TB diagnostic network</span>
+            <span class="bench__desc">Automated Python ETL modelling specimen referral routes, testing capacity and turnaround times across Nigeria’s TB diagnostic network.</span>
+            <span class="pill">Shipped</span>
+          </li>
+          <li class="bench__item">
+            <span class="bench__year mono">2021</span>
+            <span class="bench__name">Coiled-tubing asset database</span>
+            <span class="bench__desc">A 3NF schema covering the full lifecycle of oilfield coiled-tubing tools, tuned for speed and documented to ISO 9001.</span>
+            <span class="pill">Shipped</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ EXPERIENCE -->
+  <section class="section section--tint" id="log" aria-labelledby="log-title">
+    <div class="wrap">
+      <header class="section__head">
+        <a class="anchor mono" href="#log">#log</a>
+        <h2 id="log-title" class="section__title" tabindex="-1">Three domains, one question.</h2>
+        <p class="section__lede">Oilfield engineering taught me that bad data breaks equipment. National health programmes taught me it breaks decisions. Research is where I learn to catch it before it does either.</p>
+      </header>
+
+      <div class="gitlog">
+        <p class="gitlog__cmd mono" aria-hidden="true"><span>$</span> git log --graph</p>
+        <div class="gitlog__body">
+          <svg class="gitlog__graph" id="gitGraph" aria-hidden="true"></svg>
+          <ol class="commits">
+            <li class="commit" data-lane="0">
+              <p class="commit__meta mono"><span class="commit__when">Sep 2025 → now</span><span class="tag tag--research">research</span><span class="tag tag--head">HEAD</span></p>
+              <h3 class="commit__title">MSc Data Science</h3>
+              <p class="commit__org">University of Debrecen, Hungary · Erasmus semester at the University of Toulouse, 2026</p>
+              <ul class="commit__notes">
+                <li>Thesis on spatiotemporal graph neural networks for early outbreak detection.</li>
+                <li>Built Provenance and LinkWork as entries to the DEIK.AI Challenge 2026.</li>
+              </ul>
+            </li>
+            <li class="commit" data-lane="1">
+              <p class="commit__meta mono"><span class="commit__when">Dec 2024 → Oct 2025</span><span class="tag">health-data</span></p>
+              <h3 class="commit__title">Data Analyst, Maternal &amp; Newborn Health (CBHMIS)</h3>
+              <p class="commit__org">Clinton Health Access Initiative · Abuja, Nigeria</p>
+              <ul class="commit__notes">
+                <li>Built and deployed ML models predicting maternal and neonatal mortality from community health records.</li>
+                <li>Anomaly-detection QA cut manual reconciliation by 90%; briefed leadership and Gates Foundation donor teams monthly.</li>
+              </ul>
+            </li>
+            <li class="commit" data-lane="1">
+              <p class="commit__meta mono"><span class="commit__when">Oct 2023 → Nov 2024</span><span class="tag">health-data</span></p>
+              <h3 class="commit__title">Consultant, Data Management &amp; Health Informatics</h3>
+              <p class="commit__org">Clinton Health Access Initiative · Abuja, Nigeria</p>
+              <ul class="commit__notes">
+                <li>Administered Nigeria’s National LIMS and led the HPV module upgrade from requirements to national rollout.</li>
+                <li>Unified pipelines and KPI definitions across TB, HIV, HPV and EID; trained lab scientists and officials nationwide.</li>
+              </ul>
+            </li>
+            <li class="commit" data-lane="1">
+              <p class="commit__meta mono"><span class="commit__when">Feb 2023 → Sep 2023</span><span class="tag">health-data</span></p>
+              <h3 class="commit__title">Data Engineer, Health Informatics</h3>
+              <p class="commit__org">Clinton Health Access Initiative · Abuja, Nigeria</p>
+              <ul class="commit__notes">
+                <li>Automated Python ETL for the TB Diagnostic Network Optimization project.</li>
+                <li>Shipped Power BI dashboards across three national projects: TB DNO, PATHS and HPV.</li>
+              </ul>
+            </li>
+            <li class="commit" data-lane="2">
+              <p class="commit__meta mono"><span class="commit__when">Jan 2021 → Dec 2021</span><span class="tag">energy</span></p>
+              <h3 class="commit__title">Database Developer</h3>
+              <p class="commit__org">Bonitas ICT · Port Harcourt, Nigeria</p>
+              <ul class="commit__notes">
+                <li>Designed a 3NF schema for the full coiled-tubing asset lifecycle, then tuned indexing and queries.</li>
+                <li>Documented systems to ISO 9001 under Agile delivery.</li>
+              </ul>
+            </li>
+            <li class="commit" data-lane="2">
+              <p class="commit__meta mono"><span class="commit__when">2015 → 2021</span><span class="tag">energy</span></p>
+              <h3 class="commit__title">BEng, Petroleum &amp; Gas Engineering</h3>
+              <p class="commit__org">University of Port Harcourt, Nigeria · Second Class Upper</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ TOOLKIT -->
+  <section class="section section--tight" id="toolkit" aria-labelledby="kit-title">
+    <div class="wrap">
+      <header class="section__head">
+        <a class="anchor mono" href="#toolkit">#toolkit</a>
+        <h2 id="kit-title" class="section__title" tabindex="-1">Toolkit</h2>
+      </header>
+      <div class="kit">
+        <dl class="kit__grid">
+          <div class="kit__group"><dt class="mono">Languages</dt><dd>Python, SQL, R, Scala, Cypher, VBA</dd></div>
+          <div class="kit__group"><dt class="mono">Machine learning</dt><dd>scikit-learn, LightGBM, PyTorch, PyTorch Geometric, TensorFlow / Keras, SHAP, conformal prediction</dd></div>
+          <div class="kit__group"><dt class="mono">Methods</dt><dd>Predictive modelling, graph neural networks, time series, anomaly detection, validation design</dd></div>
+          <div class="kit__group"><dt class="mono">Data engineering</dt><dd>Apache Spark / PySpark, ETL and ELT orchestration, pandas, pandera, FastAPI, SQLAlchemy</dd></div>
+          <div class="kit__group"><dt class="mono">Databases</dt><dd>PostgreSQL + PostGIS, SQL Server, MySQL, Neo4j, SQLite; 3NF modelling and query tuning</dd></div>
+          <div class="kit__group"><dt class="mono">Cloud &amp; BI</dt><dd>Azure (Synapse, Databricks), AWS EMR, Snowflake, Microsoft Fabric, Power BI (DAX), Tableau</dd></div>
+          <div class="kit__group"><dt class="mono">Health systems</dt><dd>DHIS2, National LIMS, CommCare, SurveyCTO, KoBo Toolbox</dd></div>
+          <div class="kit__group"><dt class="mono">Delivery</dt><dd>Git and GitHub, Jira (Agile), requirements and SRS writing, stakeholder and donor reporting, training</dd></div>
+        </dl>
+        <div class="kit__side">
+          <div>
+            <h3 class="kit__h mono">Certifications</h3>
+            <ul class="kit__list">
+              <li>Microsoft Power BI Data Analyst Associate (PL-300)</li>
+              <li>Microsoft Azure AI, Data and Azure Fundamentals</li>
+              <li>AWS Certified Cloud Practitioner</li>
+              <li>Stanford Online: SQL</li>
+              <li>McKinsey Forward Program</li>
+              <li>GitKraken: Foundations of Git</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="kit__h mono">Spoken</h3>
+            <ul class="kit__list kit__list--lang">
+              <li><span>English</span><span class="mono">native</span></li>
+              <li><span>French</span><span class="mono">B1 · improving daily</span></li>
+              <li><span>Hungarian</span><span class="mono">A1</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ WRITING (placeholders) -->
+  <section class="section" id="writing" aria-labelledby="writing-title">
+    <div class="wrap">
+      <header class="section__head">
+        <a class="anchor mono" href="#writing">#writing</a>
+        <h2 id="writing-title" class="section__title" tabindex="-1">Writing</h2>
+        <p class="section__lede">Essays, papers and field notes on trustworthy data. The first pieces are in draft.</p>
+      </header>
+      <!--
+        EDIT: each <li> below is a placeholder. To publish one:
+          1. change the title text,
+          2. replace <span class="post__title"> with <a class="post__title" href="YOUR-URL">,
+          3. set the venue and date in .post__meta,
+          4. remove the "post--placeholder" class.
+      -->
+      <ol class="posts">
+        <li class="post post--placeholder">
+          <span class="post__kind mono">Essay</span>
+          <span class="post__title">Why “100% complete” data can still be wrong</span>
+          <span class="post__meta mono"><span class="pill pill--draft">In draft</span></span>
+        </li>
+        <li class="post post--placeholder">
+          <span class="post__kind mono">Paper</span>
+          <span class="post__title">Spatiotemporal graph neural networks for early outbreak detection</span>
+          <span class="post__meta mono"><span class="pill pill--draft">MSc thesis · 2027</span></span>
+        </li>
+        <li class="post post--placeholder">
+          <span class="post__kind mono">Field notes</span>
+          <span class="post__title">What running a national LIMS taught me about data quality</span>
+          <span class="post__meta mono"><span class="pill pill--draft">In draft</span></span>
+        </li>
+      </ol>
+      <p class="posts__more"><a class="link" href="https://medium.com/@ikennaudeani" target="_blank" rel="noopener">Earlier writing on Medium <span aria-hidden="true">↗</span></a></p>
+    </div>
+  </section>
+
+  <!-- ============================================================ VENTURE (placeholder) -->
+  <section class="venture" id="venture" aria-labelledby="venture-title">
+    <div class="wrap venture__inner">
+      <div class="venture__copy">
+        <a class="anchor mono" href="#venture">#venture</a>
+        <p class="venture__label mono"><span class="dot dot--live" aria-hidden="true"></span>Stealth · founder</p>
+        <h2 id="venture-title" class="section__title" tabindex="-1">Something new is being built.</h2>
+        <!--
+          EDIT at launch: replace the two redacted lines with the company name and one-liner,
+          e.g. <p class="venture__name">Acme</p><p class="venture__tagline">What it does, in one line.</p>,
+          then add a link to the company site and change the form copy below.
+        -->
+        <div class="redacted" id="redacted" tabindex="0" aria-label="Company name and description: not announced yet">
+          <span class="redacted__row"><span class="redacted__k mono">name</span><span class="redacted__bar" data-len="9"></span></span>
+          <span class="redacted__row"><span class="redacted__k mono">what</span><span class="redacted__bar redacted__bar--long" data-len="26"></span></span>
+          <span class="redacted__row"><span class="redacted__k mono">when</span><span class="redacted__bar redacted__bar--mid" data-len="12"></span></span>
+        </div>
+        <p class="venture__text">I’m building a technology company. It isn’t public yet. Leave your email and you’ll hear first when it launches.</p>
+      </div>
+      <form class="waitlist" id="waitlist" name="venture-waitlist" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="venture-waitlist">
+        <p class="waitlist__hp" hidden><label for="wl-bot">Leave this empty</label><input id="wl-bot" name="bot-field" tabindex="-1" autocomplete="off"></p>
+        <label class="waitlist__label mono" for="wl-email">Get the launch email</label>
+        <div class="waitlist__row">
+          <input class="waitlist__input" id="wl-email" type="email" name="email" required placeholder="you@company.com" autocomplete="email">
+          <button class="btn btn--primary" id="wl-btn" type="submit">Notify me</button>
+        </div>
+        <p class="waitlist__fine mono" id="wl-status" role="status">One email at launch. Nothing else.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================ CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <a class="anchor mono" href="#contact">#contact</a>
+      <h2 id="contact-title" class="contact__title" tabindex="-1">Have a number that needs to be true?</h2>
+      <p class="contact__text">I’m open to data science and data engineering roles in France and remotely, and to research collaborations on trustworthy AI for public health and the environment. I work in English and French.</p>
+      <div class="contact__email">
+        <a class="email" href="mailto:ikennaudeani@gmail.com">ikennaudeani@gmail.com</a>
+        <button class="chip-btn" id="copyEmail" type="button">Copy</button>
+      </div>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/ikenna-udeani/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.6h.06c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.62 4.8 6.03v5.42h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.85 1.25-1.85 2.54v4.88h-4v-11Z"/></svg>LinkedIn</a></li>
+        <li><a href="https://github.com/Kenastark" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub</a></li>
+        <li><a href="https://medium.com/@ikennaudeani" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="7" cy="12" rx="5.5" ry="5.8"/><ellipse cx="16.2" cy="12" rx="2.7" ry="5.5"/><ellipse cx="21" cy="12" rx="1" ry="5"/></svg>Medium</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner mono">
+    <span>© 2026 Ikenna Udeani · Toulouse, France</span>
+    <span>Last verified Sep 2026 · No cookies. No analytics.</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<dialog class="palette" id="palette" aria-label="Command menu">
+  <div class="palette__box">
+    <div class="palette__field">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.5"/><path d="M13.2 13.2 17 17"/></svg>
+      <input id="paletteInput" class="palette__input" type="text" placeholder="Jump to a section, copy email, open a project…" role="combobox" aria-expanded="true" aria-controls="paletteList" aria-autocomplete="list" autocomplete="off" spellcheck="false">
+    </div>
+    <ul id="paletteList" class="palette__list" role="listbox" aria-label="Commands"></ul>
+    <p class="palette__foot mono"><span>↑↓ move</span><span>↵ select</span><span>esc close</span></p>
+  </div>
+</dialog>
+
+<div class="toast mono" id="toast" role="status" hidden></div>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>

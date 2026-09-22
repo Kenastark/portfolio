@@ -1,0 +1,6 @@
+Fonts self-hosted from Fontsource (latin subset):
+  Archivo (variable: weight + width)  by Omnibus-Type
+  Newsreader (variable: weight)        by Production Type
+  IBM Plex Mono (400, 500)             by IBM
+All are licensed under the SIL Open Font License 1.1: https://openfontlicense.org
+Self-hosting keeps visitor IPs away from third-party font servers (GDPR-friendly) and speeds up first paint.

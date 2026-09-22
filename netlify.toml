@@ -1,0 +1,7 @@
+# Netlify reads this when the site is deployed from Git.
+# There is no build step: the site folder is published as-is.
+[build]
+  publish = "site"
+  command = "echo 'Static site, nothing to build'"
+
+# Headers live in site/_headers so the same file also works on Cloudflare Pages.
