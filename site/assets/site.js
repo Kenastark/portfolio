@@ -876,7 +876,7 @@
   let items = [], sel = 0, returnFocus = null;
 
   const commands = () => [
-    { label: 'Go to Work', hint: '#work', kw: 'projects case studies provenance linkwork thesis portfolio', run: () => go('work') },
+    { label: 'Go to Work', hint: '#work', kw: 'projects case studies provenance linkwork thesis portfolio cbhmis anomaly detection data quality', run: () => go('work') },
     { label: 'Go to Experience', hint: '#log', kw: 'career cv jobs history chai', run: () => go('log') },
     { label: 'Go to Toolkit', hint: '#toolkit', kw: 'skills stack tools certifications languages', run: () => go('toolkit') },
     { label: 'Go to Writing', hint: '#writing', kw: 'articles publications essays blog papers', run: () => go('writing') },

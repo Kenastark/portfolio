@@ -793,6 +793,7 @@ kbd {
 .flow__step--key .flow__k { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .flow__step--key { font-weight: 650; }
 .flow__em { display: block; font-family: var(--font-mono); font-style: normal; font-size: .66rem; color: var(--ok); letter-spacing: .02em; margin-top: .15rem; }
+.flow__em--note { color: var(--muted); }
 
 /* LinkWork ledger */
 .chain { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem; font-size: .66rem; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); }
