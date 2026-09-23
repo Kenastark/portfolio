@@ -97,6 +97,7 @@ The site promises "every figure carries its source", so keep these honest when y
 | 5+ years | Your CV (site/cv/Ikenna_Udeani_CV.pdf) and LinkedIn profile |
 | 4 national programmes (TB, HIV, HPV, EID) | CHAI Nigeria, National LIMS, 2023 to 2024 |
 | −90% manual reconciliation | CHAI CBHMIS data quality assessment (anomaly detection), 2025 |
+| 9 of 10 CBHMIS implementation states (Borno, Bauchi, Gombe, Kaduna, Kano, Niger, Nasarawa, Yobe, Sokoto) | Ikenna Udeani, first-hand: built the CHAI CBHMIS anomaly detection that covered these states, 2024 to 2025 |
 | 29% flagged / 100.00% completeness / 149,683 readings / 16 stations | Provenance phase-1 audit report (`docs/phase-reports/phase-1-audit.md`), Aug 2026 |
 | 117 tests, 96% coverage, 3,299 parameters | Provenance phase-1 report and HST-GAT model card |
 | 23 papers, 5 themes | Thesis month-1 annotated bibliography |

@@ -194,7 +194,7 @@
         <article class="case" id="mnh">
           <div class="case__visual">
             <ol class="flow" aria-label="Data quality pipeline from community health records to field verification">
-              <li class="flow__step"><span class="flow__k mono">in</span><span>CBHMIS community health records, Kaduna and Gombe states</span></li>
+              <li class="flow__step"><span class="flow__k mono">in</span><span>CBHMIS community health records, nine implementation states</span></li>
               <li class="flow__step"><span class="flow__k mono">fx</span><span>Mortality rates per ward and LGA <em class="flow__em flow__em--note">deaths per 100,000 and per 1,000 live births</em></span></li>
               <li class="flow__step flow__step--key"><span class="flow__k mono">ml</span><span>Unsupervised anomaly detection <em class="flow__em flow__em--note">Isolation Forest · LOF · One-Class SVM</em></span></li>
               <li class="flow__step"><span class="flow__k mono">bi</span><span>Streamlit dashboards ranking flagged wards and LGAs</span></li>
@@ -202,10 +202,10 @@
             </ol>
           </div>
           <div class="case__body">
-            <div class="case__meta mono"><span class="pill">Data quality</span><span>CHAI · Kaduna &amp; Gombe, Nigeria · 2024 → 2025</span></div>
+            <div class="case__meta mono"><span class="pill">Data quality</span><span>CHAI · 9 of 10 CBHMIS states, Nigeria · 2024 → 2025</span></div>
             <h3 class="case__title">CBHMIS anomaly detection</h3>
             <p class="case__kicker">Which mortality figures are real, and which are reporting errors?</p>
-            <p>As part of CHAI’s data quality assessments, I built unsupervised anomaly detection over Nigeria’s community-based health management information system (CBHMIS). For every ward and LGA in the ten CBHMIS implementation states, the pipeline turns raw counts into maternal deaths per 100,000 live births and neonatal deaths per 1,000, then flags statistically unusual areas with Isolation Forest, cross-checked against Local Outlier Factor and One-Class SVM. The flags surfaced possible hotspots alongside data problems, such as ward names spelled several ways and deaths reported against zero live births, and flagged areas were recommended for field verification before anyone acted on the numbers.</p>
+            <p>As part of CHAI’s data quality assessments, I built unsupervised anomaly detection over Nigeria’s community-based health management information system (CBHMIS). For every ward and LGA in nine of the ten CBHMIS implementation states (Borno, Bauchi, Gombe, Kaduna, Kano, Niger, Nasarawa, Yobe and Sokoto), the pipeline turns raw counts into maternal deaths per 100,000 live births and neonatal deaths per 1,000, then flags statistically unusual areas with Isolation Forest, cross-checked against Local Outlier Factor and One-Class SVM. The flags surfaced possible hotspots alongside data problems, such as ward names spelled several ways and deaths reported against zero live births, and flagged areas were recommended for field verification before anyone acted on the numbers.</p>
             <ul class="facts">
               <li><span class="facts__k mono">Methods</span><span>Isolation Forest, Local Outlier Factor and One-Class SVM consensus; K-Means clustering of wards (silhouette-selected k)</span></li>
               <li><span class="facts__k mono">Stack</span><span>Python, pandas, scikit-learn, Streamlit, Plotly, DHIS2, Power BI</span></li>
@@ -323,7 +323,7 @@
               <h3 class="commit__title">Data Analyst, Maternal &amp; Newborn Health (CBHMIS)</h3>
               <p class="commit__org">Clinton Health Access Initiative · Abuja, Nigeria</p>
               <ul class="commit__notes">
-                <li>Built unsupervised anomaly detection (Isolation Forest, cross-checked with Local Outlier Factor and One-Class SVM) to flag unusual maternal and neonatal mortality rates across wards and LGAs in Kaduna and Gombe, as part of data quality assessments.</li>
+                <li>Built unsupervised anomaly detection (Isolation Forest, cross-checked with Local Outlier Factor and One-Class SVM) to flag unusual maternal and neonatal mortality rates across wards and LGAs in nine of the ten CBHMIS implementation states, as part of data quality assessments.</li>
                 <li>Delivered Streamlit dashboards that ranked flagged areas for field verification; the checks cut manual reconciliation by 90%. Briefed leadership and Gates Foundation donor teams monthly.</li>
               </ul>
             </li>
